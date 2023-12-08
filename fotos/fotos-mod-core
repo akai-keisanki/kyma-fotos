@@ -1,0 +1,24 @@
+# Fotos Mod Core Package For LuxOS 1.0 ( Unfinished )
+# Fotos's Modification Core For LuxOS 1.0 And Main Scripts
+
+class lux_pack:
+  name="fotos-mod-core"
+  version="1.0"
+  aditionaldata={"datalist"=[None]}
+  def startscript():
+    print("\n--- < Φωτός > ---\n")
+  def pexcm(cmd, cliv):
+    splitcmd=cmd.split(" ")
+    r=1
+    if splitcmd[0] == "fotos":
+      try:
+        if self.splitcmd[1] == "#version":
+          print("Φωτός 1.0 - \" Κόσμος\"")
+      except:
+          print(cmd+" >> fotos failed."))
+    else:
+      r=0
+    return r;
+  class packvars:
+    kyma_name="Φωτός"
+    kyma_codename="Κόσμος"

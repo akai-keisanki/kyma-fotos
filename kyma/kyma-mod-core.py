@@ -8,6 +8,7 @@ class lux_pack:
   def startscript():
     print("\n--- > Κύμα < ---\n")
   def pexcm(cmd, cliv):
+    cliv2=cliv
     splitcmd=cmd.split(" ")
     r=1
     if splitcmd[0] == "kyma" or splitcmd[0] == "kyma-kosmos":
@@ -30,7 +31,7 @@ class lux_pack:
           print(cmd+" >> kosmos-kosmos failed.")
     else:
       r=0
-    return r
+    return [cliv2, r]
   class packvars:
     kyma_name="Κύμα"
     kyma_codename="Κόσμος"

@@ -4,7 +4,7 @@
 class lux_pack:
   name="kyma-mod-core"
   version="1.0"
-  aditionaldata={"datalist"=[None]}
+  aditionaldata={"datalist":[None]}
   def startscript():
     print("\n--- > Κύμα < ---\n")
   def pexcm(cmd, cliv):
@@ -30,7 +30,7 @@ class lux_pack:
           print(cmd+" >> kyma failed."))
     else:
       r=0
-    return r;
+    return r
   class packvars:
     kyma_name="Κύμα"
     kyma_codename="Κόσμος"

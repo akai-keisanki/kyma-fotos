@@ -15,7 +15,7 @@ class lux_pack:
         if self.splitcmd[1] == "#version":
           print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος\"")
       except:
-          print(cmd+" >> kyma-rythmiseis failed."))
+          print(cmd+" >> kyma-rythmiseis failed.")
     else:
       r=0
     return r

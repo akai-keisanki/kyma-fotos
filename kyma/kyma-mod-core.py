@@ -19,7 +19,7 @@ class lux_pack:
           print("Updating to: Unknown")
           print("The updating system is broken")
       except:
-          print(cmd+" >> kyma failed."))
+          print(cmd+" >> kyma-kosmos failed.")
     elif splitcmd[0] == "kosmos" or splitcmd[0] == "kosmos-kosmos":
       try:
         if self.splitcmd[1] == "#version":
@@ -27,7 +27,7 @@ class lux_pack:
         elif self.splitcmd[1] == "":
           print("Κόσμος 1.0 - \" Κόσμος\"")
       except:
-          print(cmd+" >> kyma failed."))
+          print(cmd+" >> kosmos-kosmos failed.")
     else:
       r=0
     return r

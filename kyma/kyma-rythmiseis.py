@@ -15,6 +15,14 @@ class lux_pack:
       try:
         if splitcmd[1] == "#version":
           print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος \"")
+        elif splitcmd[1] == "update":
+          print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος \"")
+          print("To update \" kyma-rythmiseis \", input")
+          print("\" fluctus packer fetch kyma-rythmiseis.py from akai-keisanki/kyma-fotos/All/kyma \"")
+          print("On the command line interface.")
+        elif splitcmd[1] == "help":
+          print(" --- kyma help --- ")
+          print("kyma-kosmos - kyma-rythmiseis main command")
       except:
           print(cmd+" >> kyma-rythmiseis-kosmos failed.")
     else:

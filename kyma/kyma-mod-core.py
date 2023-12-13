@@ -8,6 +8,10 @@ class lux_pack:
   def startscript():
     print("\n--- > Κύμα < ---\n")
   def pexcm(cmd, cliv):
+    try:
+      cliv["vars"]["kosmos"]
+    except:
+      cliv["vars"]["kosmos"] = "none"
     cliv2=cliv
     splitcmd=cmd.split(" ")
     r=1
@@ -21,6 +25,10 @@ class lux_pack:
           print("\" fluctus packer fetch kyma-mod-core.py from akai-keisanki/kyma-fotos/All/kyma \"")
           print("On the command line interface.")
           print("The updating system is a work in progress.")
+        elif splitcmd[1] == "help":
+          print(" --- kyma help --- ")
+          print("kyma-kosmos - kyma main command")
+          print("kosmos-kosmos - kyma administration system")
         elif splitcmd[1] == "get-packs":
           print("Κύμα 1.0 - \" Κόσμος \"")
           print("To get all packs from kyma, input")
@@ -33,8 +41,10 @@ class lux_pack:
       try:
         if splitcmd[1] == "#version":
           print("Κόσμος 1.0 - \" Κόσμος \"")
-        elif splitcmd[1] == "":
-          print("Κόσμος 1.0 - \" Κόσμος \"")
+        elif splitcmd[1] == "turn-on":
+          cliv2["vars"]["kosmos"] = "kosmos-kosmos"
+        elif splitcmd[1] == "check":
+          print("Kosmos: "+cliv["vars"]["kosmos"])
       except:
           print(cmd+" >> kosmos-kosmos failed.")
     else:

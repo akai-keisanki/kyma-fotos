@@ -14,7 +14,7 @@ class lux_pack:
     if splitcmd[0] == "k-r" or splitcmd[0] == "k-rythmiseis" or splitcmd[0] == "rythmiseis" or splitcmd[0] == "kyma-rythmiseis" or splitcmd[0] == "kyma-rythmiseis-kosmos":
       try:
         if splitcmd[1] == "#version":
-          print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος\"")
+          print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος \"")
       except:
           print(cmd+" >> kyma-rythmiseis-kosmos failed.")
     else:

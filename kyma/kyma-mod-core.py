@@ -13,20 +13,28 @@ class lux_pack:
     r=1
     if splitcmd[0] == "kyma" or splitcmd[0] == "kyma-kosmos":
       try:
-        if self.splitcmd[1] == "#version":
-          print("Κύμα 1.0 - \" Κόσμος\"")
-        elif self.splitcmd[1] == "update":
-          print("Κύμα 1.0 - \" Κόσμος\"")
-          print("Updating to: Unknown")
-          print("The updating system is broken")
+        if splitcmd[1] == "#version":
+          print("Κύμα 1.0 - \" Κόσμος \"")
+        elif splitcmd[1] == "update":
+          print("Κύμα 1.0 - \" Κόσμος \"")
+          print("To update \" kyma-mod-core \", input")
+          print("\" fluctus packer fetch kyma-mod-core.py from akai-keisanki/kyma-fotos/All/kyma \"")
+          print("On the command line interface.")
+          print("The updating system is a work in progress.")
+        elif splitcmd[1] == "get-packs":
+          print("Κύμα 1.0 - \" Κόσμος \"")
+          print("To get all packs from kyma, input")
+          print("\" fluctus packer fetch kyma-mod-core.py from akai-keisanki/kyma-fotos/All/kyma &&& fluctus packer fetch kyma-rythmiseis.py from akai-keisanki/kyma-fotos/All/kyma \"")
+          print("On the command line interface.")
+          print("The kyma pack installer system is a work in progress.")
       except:
           print(cmd+" >> kyma-kosmos failed.")
     elif splitcmd[0] == "kosmos" or splitcmd[0] == "kosmos-kosmos":
       try:
-        if self.splitcmd[1] == "#version":
-          print("Κόσμος 1.0 - \" Κόσμος\"")
-        elif self.splitcmd[1] == "":
-          print("Κόσμος 1.0 - \" Κόσμος\"")
+        if splitcmd[1] == "#version":
+          print("Κόσμος 1.0 - \" Κόσμος \"")
+        elif splitcmd[1] == "":
+          print("Κόσμος 1.0 - \" Κόσμος \"")
       except:
           print(cmd+" >> kosmos-kosmos failed.")
     else:

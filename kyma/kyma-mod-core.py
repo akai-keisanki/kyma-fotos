@@ -43,6 +43,8 @@ class lux_pack:
           print("Κόσμος 1.0 - \" Κόσμος \"")
         elif splitcmd[1] == "turn-on":
           cliv2["vars"]["kosmos"] = "kosmos-kosmos"
+        elif splitcmd[1] == "turn-off":
+          cliv2["vars"]["kosmos"] = "none"
         elif splitcmd[1] == "check":
           print("Kosmos: "+cliv["vars"]["kosmos"])
       except:

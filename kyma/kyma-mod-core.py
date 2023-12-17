@@ -42,7 +42,7 @@ class lux_pack:
     elif splitcmd[0] == "kosmos" or splitcmd[0] == "kosmos-kosmos":
       try:
         if splitcmd[1] == "#version":
-          print("Κόσμος 1.0 - \" Κόσμος \" running on Κύμα 1.0 - \" Κόσμος \"")
+          print("Κόσμος 1.0 - \" Κόσμος \" with Κύμα 1.0 - \" Κόσμος \"")
         elif splitcmd[1] == "turn-on":
           cliv2["vars"]["kosmos"] = "kosmos-kosmos"
         elif splitcmd[1] == "turn-off":

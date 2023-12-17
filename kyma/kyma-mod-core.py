@@ -1,6 +1,8 @@
 # Kyma Mod Core Package For LuxOS 1.0 ( Unfinished )
 # Kyma's Modification Core For LuxOS 1.0 And Main Scripts
 
+
+
 class lux_pack:
   name="kyma-mod-core"
   version="1.0"
@@ -40,7 +42,7 @@ class lux_pack:
     elif splitcmd[0] == "kosmos" or splitcmd[0] == "kosmos-kosmos":
       try:
         if splitcmd[1] == "#version":
-          print("Κόσμος 1.0 - \" Κόσμος \"")
+          print("Κόσμος 1.0 - \" Κόσμος \" running on Κύμα 1.0 - \" Κόσμος \"")
         elif splitcmd[1] == "turn-on":
           cliv2["vars"]["kosmos"] = "kosmos-kosmos"
         elif splitcmd[1] == "turn-off":
@@ -55,3 +57,7 @@ class lux_pack:
   class packvars:
     kyma_name="Κύμα"
     kyma_codename="Κόσμος"
+    kyma_fullname="Κύμα 1.0 - \" Κόσμος \""
+    kosmos_name="Κόσμος"
+    kosmos_codename="Κόσμος"
+    kosmos_fullname="Κόσμος 1.0 - \" Κόσμος \""

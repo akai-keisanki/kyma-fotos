@@ -1,7 +1,7 @@
 # Kyma Rythmiseis Package For LuxOS 1.0 ( Unfinished )
 # Kyma's Settings And Configuration For LuxOS 1.0
 
-from lux_packages.kyma_mod_core import lux_pack.packvars as kymavars
+from lux_packages.kyma_mod_core import lux_pack as kymapack
 
 class lux_pack:
   name="kyma-rythmiseis"
@@ -16,7 +16,7 @@ class lux_pack:
     if splitcmd[0] == "k-r" or splitcmd[0] == "k-rythmiseis" or splitcmd[0] == "rythmiseis" or splitcmd[0] == "kyma-rythmiseis" or splitcmd[0] == "kyma-rythmiseis-kosmos":
       try:
         if splitcmd[1] == "#version":
-          print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος \" with "+kymavars.kyma_fullname)
+          print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος \" with "+kymapack.packvars.kyma_fullname)
         elif splitcmd[1] == "update":
           print("Κύμα Ρυθμίσεις 1.0 - \" Κόσμος \"")
           print("To update \" kyma-rythmiseis \", input")

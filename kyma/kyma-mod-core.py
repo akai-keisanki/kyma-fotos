@@ -45,10 +45,13 @@ class lux_pack:
           print("Κόσμος 1.0 - \" Κόσμος \" with Κύμα 1.0 - \" Κόσμος \"")
         elif splitcmd[1] == "turn-on":
           cliv2["vars"]["kosmos"] = "kosmos-kosmos"
+          lux_pack.packvars.kosmos_status = "kosmos-kosmos"
         elif splitcmd[1] == "turn-off":
           cliv2["vars"]["kosmos"] = "none"
+          lux_pack.packvars.kosmos_status = "none"
         elif splitcmd[1] == "check":
-          print("Kosmos: "+cliv["vars"]["kosmos"])
+          print("Kosmos: "+lux_pack.packvars.kosmos_status)
+          print("Kosmos (CLIV): "+cliv["vars"]["kosmos"])
       except:
           print(cmd+" >> kosmos-kosmos failed.")
     else:
@@ -61,3 +64,4 @@ class lux_pack:
     kosmos_name="Κόσμος"
     kosmos_codename="Κόσμος"
     kosmos_fullname="Κόσμος 1.0 - \" Κόσμος \""
+    kosmos_status="none"

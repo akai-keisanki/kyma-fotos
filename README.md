@@ -1,2 +1,2 @@
 # kyma-fotos
-> Kyma &lt; and > Fotos &lt; Packages ( Extra Modifications ) for LuxOS
+\> Kyma \< and \> Fotos \< Packages ( Extra Modifications ) for LuxOS

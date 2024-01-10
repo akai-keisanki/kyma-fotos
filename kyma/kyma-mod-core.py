@@ -9,13 +9,12 @@ class lux_pack:
   aditionaldata={"datalist":[None]}
   def startscript():
     print("\n--- > Κύμα < ---\n")
-  def pexcm(cmd, cliv):
+  def pexcm(cmd, splitcmd, cliv):
     try:
       cliv["vars"]["kosmos"]
     except:
       cliv["vars"]["kosmos"] = "none"
     cliv2=cliv
-    splitcmd=cmd.split(" ")
     r=1
     if splitcmd[0] == "kyma" or splitcmd[0] == "kyma-kosmos":
       try:
@@ -65,3 +64,4 @@ class lux_pack:
     kosmos_codename="Κόσμος"
     kosmos_fullname="Κόσμος 1.0 - \" Κόσμος \""
     kosmos_status="none"
+

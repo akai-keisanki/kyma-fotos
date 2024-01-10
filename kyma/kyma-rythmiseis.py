@@ -9,9 +9,8 @@ class lux_pack:
   aditionaldata={"datalist":[None]}
   def startscript():
     {}
-  def pexcm(cmd, cliv):
+  def pexcm(cmd, splitcmd, cliv):
     cliv2=cliv
-    splitcmd=cmd.split(" ")
     r=1
     if splitcmd[0] == "k-r" or splitcmd[0] == "k-rythmiseis" or splitcmd[0] == "rythmiseis" or splitcmd[0] == "kyma-rythmiseis" or splitcmd[0] == "kyma-rythmiseis-kosmos":
       try:
@@ -32,3 +31,4 @@ class lux_pack:
     return [cliv2, r]
   class packvars:
     {}
+

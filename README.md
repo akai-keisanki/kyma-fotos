@@ -1,4 +1,4 @@
-# kyma-fotos
+# `(py)` kyma-fotos Package for Bright+ LuxOS
 `> Kyma <` and `> Fotos <` Packages ( Extra Modifications ) for LuxOS
 
 # WIP Project
